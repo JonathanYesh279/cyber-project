@@ -2,9 +2,9 @@
 
 function Login() {
   return (
-    <div className="nav-link">
-      <li>Login</li>
-    </div>
+    <li className="nav-link">
+      Login
+    </li>
   )
 }
 

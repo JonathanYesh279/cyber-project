@@ -1,7 +1,13 @@
 
+
 function Button() {
+  const handleClick = (e) => {
+    e.preventDefault()
+  }
+  
   return (
-    <button className="btn">
+    <button className="btn"
+      onClick={handleClick}>
       Send
     </button>
   )

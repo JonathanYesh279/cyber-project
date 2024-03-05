@@ -14,9 +14,9 @@ function App() {
     return (
         <div className='App'>
         <Header>
-          <About />
-          <Login />
           <Register />
+          <Login />
+          <About />
         </Header>
         <ModuleChecker>
           <Parameter />

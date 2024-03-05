@@ -2,9 +2,9 @@
 
 function About() {
   return (
-    <div className="nav-link">
-      <li>About</li>
-    </div>
+    <li className="nav-link">
+      About
+    </li>
   )
 }
 

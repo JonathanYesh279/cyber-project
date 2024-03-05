@@ -6,8 +6,8 @@ function Header({ children }) {
  
   return (
     <header>
-      <div className="container">
-        <h2>Feedback UI</h2> 
+      <div className="header">
+        <h2>CyberProject</h2> 
         <ul className='nav-links'>{children}</ul>
       </div>
     </header>

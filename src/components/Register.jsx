@@ -2,9 +2,9 @@
 
 function Register() {
   return (
-    <div className="nav-link">
-      <li>Register</li>
-    </div>
+    <li className="nav-link">
+      Register
+    </li>
   )
 }
 
