@@ -1,31 +1,29 @@
-import './index.css';
-import Header from './components/Header';
-import About from './components/About';
-import Login from './components/Login';
-import Register from './components/Register';
+import './index.css'; 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
+import AboutPage from './components/AboutPage';
+import RegisterPage from './components/RegisterPage';
+import LoginPage from './components/LoginPage';
 import ModuleChecker from './components/ModuleChecker';
 import Parameter from './components/Parameter';
 import Button from './components/shared/Button';
-  
- 
 
+
+ 
 function App() {
-    const number = 1
-    return (
-        <div className='App'>
-        <Header>
-          <Register />
-          <Login />
-          <About />
-        </Header>
-        <ModuleChecker>
-          <Parameter />
-          <Parameter />
-          <Parameter />
-          <Parameter />
-          <Button />
-        </ModuleChecker>
-        </div>
+  return (
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' exact element={<AboutPage />} />
+          <Route path='/register' exact element={<RegisterPage />} />
+          <Route path='/login' exact element={<LoginPage />} />
+        </Routes>
+      </div>
+    </Router>
     );
   }
 

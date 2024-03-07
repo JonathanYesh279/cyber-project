@@ -1,16 +1,16 @@
 
 
-function Button() {
+function Button({ onClick }) {
   const handleClick = (e) => {
-    e.preventDefault()
-  }
-  
+    e.preventDefault();
+    onClick()
+  };
+
   return (
-    <button className="btn"
-      onClick={handleClick}>
+    <button className='btn' onClick={handleClick}>
       Send
     </button>
-  )
+  );
 }
 
 export default Button

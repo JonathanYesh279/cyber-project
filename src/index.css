@@ -13,15 +13,36 @@ body {
   background-color: #333;
 }
 
-.header {
+.navbar {
   display: flex;
-  justify-content:space-evenly;
+  width: 100%;
   align-items: center;
   background-color: black;
   color: red;
   padding: 0 20px;
   line-height: 3;
+}
 
+.navbar a {
+  color: red;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  margin: 10px;
+}
+
+.nav-link a {
+  color: red;
+}
+
+.nav-link a:hover {
+  border-bottom: 2px solid red;
 }
 
 .btn {
@@ -39,22 +60,6 @@ body {
   background-color: rgb(248, 52, 52);
 }
 
-.nav-links {
-  display: flex;
-}
-
-.nav-link {
-  display: flex;
-  flex-direction: column;
-  margin:10px;
-  color: red;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-  li:hover{
-   border-bottom: 2px solid red;
-}
 
 .module-checker {
   background-color: black;
@@ -82,7 +87,7 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #333;
-  color: #fff;
+  color: red;
   margin: 5px;
   border:none;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
  
-function Parameter({ number }) {
+function Parameter({ label }) {
   const [inputValue, setInputValue] = useState();
 
   const handleInputChange = (e) => {
@@ -10,12 +10,12 @@ function Parameter({ number }) {
 
   return (
     <div className='parameter'>
-      <label htmlFor={`param-${number}`}>Parameter #{number}</label>
+      <label>{label}</label>
       <input
         className='input-parameter'
         type='text'
-        id={`param-${number}`}
         placeholder='Parameter'
+        value={inputValue}
         onChange={handleInputChange}
       />
     </div>
