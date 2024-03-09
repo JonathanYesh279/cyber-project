@@ -15,7 +15,7 @@ function Parameter({ label, onInputChange }) {
       <input
         className='input-parameter'
         type='text'
-        placeholder='Parameter'
+        placeholder='Input'
         value={inputValue}
         onChange={handleInputChange}
       />
