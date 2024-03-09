@@ -17,8 +17,8 @@ function HomePage() {
   const navigate = useNavigate();
 
   const handleInputChange = (label, value) => {
-    setFormData((preData) => ({
-      ...preData,
+    setFormData((prevData) => ({
+      ...prevData,
       [label]: value,
     }));
   };
