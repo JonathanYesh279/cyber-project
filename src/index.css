@@ -17,10 +17,11 @@ body {
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: black;
-  color: red;
+  background-color: #1119;
+  color: #880000;
   padding: 0 20px;
   line-height: 3;
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
 }
 
 .navbar a {
@@ -64,10 +65,11 @@ body {
 .module-checker {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
-  color: red;
+  background-color: #1119;
+  color: rgb(255, 0, 0);
   margin: 100px;
-  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  border-radius: 10px; 
 }
 
 .parameter {
@@ -113,14 +115,16 @@ body {
   display: inline-block;
   height: 300px;
   width: 47.3%;
-  background-color: black;
+  background-color: #1119;
   color: red;
   margin: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.2);
 }
 
 .card-module h2 {
   text-align: center;
+  margin: 10px;
 }
 .card-module p {
   margin-top: 20px;
