@@ -99,3 +99,27 @@ body {
 .parameter label {
   margin-left: 5px;
 }
+
+.dash-board-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-module {
+  display: inline-block;
+  height: 300px;
+  width: 47.3%;
+  background-color: black;
+  color: red;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.card-module h2 {
+  text-align: center;
+}
+.card-module p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+

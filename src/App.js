@@ -5,9 +5,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import RegisterPage from './components/RegisterPage';
 import LoginPage from './components/LoginPage';
-import ModuleChecker from './components/ModuleChecker';
-import Parameter from './components/Parameter';
-import Button from './components/shared/Button';
+import Dashboard from './components/Dashboard';
 
 
  
@@ -21,6 +19,7 @@ function App() {
           <Route path='/about' exact element={<AboutPage />} />
           <Route path='/register' exact element={<RegisterPage />} />
           <Route path='/login' exact element={<LoginPage />} />
+          <Route path='/dashboard' exact element={<Dashboard />} />
         </Routes>
       </div>
     </Router>

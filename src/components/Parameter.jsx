@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
  
-function Parameter({ label }) {
-  const [inputValue, setInputValue] = useState();
+function Parameter({ label, onInputChange }) {
+  const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => {
-    setInputValue(e.target.value)
-  }
+    setInputValue(e.target.value);
+    onInputChange(label, e.target.value);
+  };
 
   return (
     <div className='parameter'>
