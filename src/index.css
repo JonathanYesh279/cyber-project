@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +14,12 @@ body {
   background-color: #333;
 }
 
+.App {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -21,7 +28,7 @@ body {
   color: #880000;
   padding: 0 20px;
   line-height: 3;
-  box-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
 }
 
 .navbar a {
@@ -129,5 +136,123 @@ body {
 .card-module p {
   margin-top: 20px;
   margin-left: 10px;
+}
+
+.register-container {
+  display:flex;
+  margin:auto;
+  justify-content: center;
+  background-color: #1119;
+  width: 50%;
+  height: 500px;
+}
+.img-register {
+  width: 20%;
+  height: 100%;
+}
+
+.register-form {
+  width: 50%;
+}
+
+.img {
+  width: 300px;
+  height: 500pxS;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  background-color: #1119;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.3);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin: 30px;
+  color: #fff;
+  height: 15vh;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px 10px;
+  background-color: #111;
+  border: 1px solid transparent; 
+  outline: 1px solid rgb(255, 255, 255, 0.15); 
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #1119;
+}
+
+.login-button p {
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.sign-up-inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 60px;
+  color: #fff;
+  background-color: #1119;
+  border: 1px solid transparent;
+  outline: 1px solid rgb(255, 255, 255, 0.15);
+  border: none;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.sign-up-inputs:focus {
+  border: 1px solid red;
+  background-color: #333;
+}
+
+.btn-sign-up {
+  display: flex;
+  padding: 10px 115px;
+  margin-top: 5px;
+  margin:auto;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1119;
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  outline: 1px solid rgb(255, 255, 255, 0.15);
+  border: none;
+}
+
+.btn-sign-up:hover {
+  background-color: #111;
+  border: none;
+}
+
+.login-container h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #fff;
 }
 
