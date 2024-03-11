@@ -1,3 +1,4 @@
+import React from 'react'
 import ButtonRegister from './shared/ButtonRegister';
 import { signInWithGoogle, signInWithGitHub, signInWithFacebook } from '../firebase';
 
