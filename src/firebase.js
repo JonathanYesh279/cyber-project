@@ -1,6 +1,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
+
 const firebaseConfig = {
   apiKey: 'AIzaSyA7xRcusIl6bkR7UsCRyIUZOT2HrcM1SeE',
   authDomain: 'cyberproject-deb69.firebaseapp.com',
@@ -15,16 +16,30 @@ firebase.initializeApp(firebaseConfig);
 export const auth = firebase.auth();
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 export const githubProvider = new firebase.auth.GithubAuthProvider();
-export const facebookProvider = new firebase.auth.GithubAuthProvider();
+export const facebookProvider = new firebase.auth.FacebookAuthProvider();
+
+
+export const signOut = () => {
+  return auth.signOut();
+}
 
 export const signInWithGoogle = () => {
-  return auth.signInWithPopup(googleProvider);
+  return auth.signInWithPopup(googleProvider)
+    .catch((error) => {
+      console.error('Google sign in error:', error);
+    });
 };
 
 export const signInWithGitHub = () => {
-  return auth.signInWithPopup(githubProvider);
+  return auth.signInWithRedirect(githubProvider)
+    .catch((error) => {
+      console.log('GitHub sign in error:', error);
+    });
 };
 
 export const signInWithFacebook = () => {
-  return auth.signInWithPopup(facebookProvider);
+  return auth.signInWithPopup(facebookProvider)
+    .catch((error) => {
+    console.error('GitHub sign in error:', error)
+  })
 };

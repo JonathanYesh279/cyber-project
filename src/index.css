@@ -33,6 +33,7 @@ body {
 
 .navbar a {
   color: red;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -170,7 +171,9 @@ body {
   background-color: #1119;
   margin-top: 50px;
   border-radius: 10px;
-  box-shadow: 0 0 80px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+  outline: 1px solid rgb(255, 255, 255, 0.15);
 }
 
 .login-container h1 {
@@ -190,7 +193,7 @@ body {
   justify-content: center;
   margin: 10px;
   padding: 10px 10px;
-  background-color: #111;
+  background-color: #1117;
   border: 1px solid transparent; 
   outline: 1px solid rgb(255, 255, 255, 0.15); 
   color: #fff;
