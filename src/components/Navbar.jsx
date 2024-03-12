@@ -15,7 +15,7 @@ function Navbar() {
           <li className='nav-link'><Link to='/about'>About</Link></li>
           <li className='nav-link'><Link to='/register'>Register</Link></li>
           {user ? (
-            <li className='nav-link'><a href='#' className='nav-link' onClick={() => auth.signOut()}>Sign Out</a></li>
+            <li className='nav-link'><a href='/login' className='nav-link' onClick={() => auth.signOut()}>Sign Out</a></li>
           ) : (
             <li className='nav-link'><Link to='/Login'>Login</Link></li>  
           )}
