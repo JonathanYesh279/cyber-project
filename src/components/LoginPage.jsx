@@ -40,15 +40,6 @@ function LoginPage() {
       });
   };
 
-  const handleSignOut = () => {
-    signOut()
-      .then(() => {
-        navigate('/login');
-      })
-      .catch((error) => {
-        console.error('Sign out error:', error);
-      });
-  };
 
   return (
     <div className='login-container'>

@@ -12,10 +12,10 @@ function Navbar() {
       <div className="navbar">
         <h2><Link to='/'>CyberProject</Link></h2> 
         <ul className='nav-links'>
-            <li className='nav-link'><Link to='/about'>About</Link></li>
+          <li className='nav-link'><Link to='/about'>About</Link></li>
           <li className='nav-link'><Link to='/register'>Register</Link></li>
           {user ? (
-            <li className='nav-link'><a className='nav-link' onClick={() => auth.signOut()}>Sign Out</a></li>
+            <li className='nav-link'><a href='#' className='nav-link' onClick={() => auth.signOut()}>Sign Out</a></li>
           ) : (
             <li className='nav-link'><Link to='/Login'>Login</Link></li>  
           )}

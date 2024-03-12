@@ -1,5 +1,5 @@
 import { FcGoogle } from 'react-icons/fc';
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { FaGithub, } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 
 function ButtonRegister({ provider, onClick }) {
